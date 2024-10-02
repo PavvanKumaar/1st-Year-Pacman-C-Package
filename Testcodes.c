@@ -1,43 +1,6 @@
 #include <stdio.h>
-#define Height 20 
-#define Width 70
-int map()
-{
-    int i,j;
-   char map1[Height][Width];
-   for(i=0;i<Height;i++)
-   {
-       for(j=0;j<Width;j++)
-       {
-           if(i==0 || j==0 || i==Height-1 || j==Width-1)
-           {
-               map1[i][j]='#';
-           }
-           else
-           {
-               map1[i][j]=' ';
-           }
-       }
-   }
-}
-void displayMessage()
-{
-    //To display welcome message
-    FILE *fptr = fopen("C:\\1st-Year-Pacaman-C-Package\\Welcome + Rules & Guides.txt","r");
-    char buffer[255];
-    if(fptr==NULL)
-    {
-        printf("Unable to open the file\n");
-    }
-    while(fgets(buffer,255,fptr)!=NULL)
-    {
-        printf("%s\n",buffer);
-    }
-    fclose(fptr);
-    //To display the leaderboard 
-
-}
-void inputUserPass()
+#include <string.h>
+int main()
 {
     char Username[255],Password[255];
     printf("Enter the Username:");
@@ -54,7 +17,7 @@ void inputUserPass()
     }
     //Username
     FILE *uptr = fopen("C:\\1st-Year-Pacaman-C-Package\\Usernames.txt","a");
-    fprintf("%s\n",Username);
+    fprintf(uptr,Username);
     fclose(uptr);
     //Passwords
     printf("Enter the password");
@@ -70,13 +33,7 @@ void inputUserPass()
         goto l2;
     }
     FILE *pptr = fopen("C:\\1st-Year-Pacaman-C-Package\\Password.txt","a");
-    fprintf("%s\n",Password);
+    fprintf(pptr,Password);
     fclose(pptr);
-}
-int main()
-{
-    int no_players,diff;
     return 0;
-
 }
-

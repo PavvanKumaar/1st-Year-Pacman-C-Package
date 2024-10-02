@@ -1,0 +1,12 @@
+                                                                                        WELCOME TO THE PACMAN GAME!
+
+Rules:
+1. The character 'C' is the main character PACMAN which YOU control.
+2. The '#' represents walls and they act as real walls (i.e.) you will not be able to move surpassing them.
+3. The '.' represents FOOD/POINTS, these are elements that need to be collected throughout the game to up your overall score.
+4. The 'X' represents GHOSTS/DEMONS which when made contact 
+Guide:
+1. Use the UP ARROW or 'W' to move the pacman up.
+2. Use the DOWN ARROW or 'S' to move the pacman down.
+3. Use the LEFT ARROW or 'A' to move the pacman left.
+4. Use the RIGHT ARROW or 'D' to move the pacman right.
